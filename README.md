@@ -489,7 +489,7 @@ src
 
 ## Overall Test Report
 
-![Smart Parking Lot System - Overall Test Report](overall-test-report.png)
+![Smart Parking Lot System - Overall Test Report](src/overall-test-report.png)
 
 # Future Enhancements
 
