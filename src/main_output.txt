@@ -1,0 +1,120 @@
+vikash@vikash:~/Downloads/Airtribe/SmartParkingLotSystem$ javac -d out $(find src -name "*.java") && java -cp out Main
+
+===================================
+      SMART PARKING LOT SYSTEM
+===================================
+
+===== INITIAL PARKING STATUS =====
+Available Spots : 3
+
+===================================
+           VEHICLE CHECK-IN
+===================================
+Vehicle Number : UP16BK1234
+Vehicle Type   : BIKE
+Check-In Status: SUCCESS
+Ticket ID      : a9bb6cca-b0d8-4fe8-8b96-e3abeb308df5
+Spot ID        : 1
+Entry Time     : 2026-10-23T18:43:13.464869775
+===================================
+Available Spots : 2
+
+===================================
+           VEHICLE CHECK-IN
+===================================
+Vehicle Number : UP16CR5678
+Vehicle Type   : CAR
+Check-In Status: SUCCESS
+Ticket ID      : ca4a50a9-2f1f-4265-9431-8179c302edf5
+Spot ID        : 2
+Entry Time     : 2026-10-23T18:43:13.466618069
+===================================
+Available Spots : 1
+
+===================================
+           VEHICLE CHECK-IN
+===================================
+Vehicle Number : UP16BS9999
+Vehicle Type   : BUS
+Check-In Status: SUCCESS
+Ticket ID      : 52c8dfa0-9c40-4ec0-945e-a7773b708725
+Spot ID        : 3
+Entry Time     : 2026-10-23T18:43:13.467124843
+===================================
+Available Spots : 0
+
+===================================
+           VEHICLE CHECK-IN
+===================================
+Vehicle Number : UP16BS1111
+Vehicle Type   : BUS
+Check-In Status: REJECTED
+Reason         : No compatible parking spot available
+Ticket ID      : Not generated
+===================================
+Available Spots : 0
+
+===================================
+       INVALID CHECK-OUT TEST
+===================================
+Ticket ID       : INVALID-TICKET-ID
+Check-Out Status: REJECTED
+Returned Fee    : Rs. 0.0
+
+===================================
+           VEHICLE CHECK-OUT
+===================================
+Vehicle Number : UP16BK1234
+Vehicle Type   : BIKE
+Ticket ID      : a9bb6cca-b0d8-4fe8-8b96-e3abeb308df5
+Entry Time     : 2026-10-23T18:43:13.464869775
+Exit Time      : 2026-10-23T18:43:13.474624210
+Parking Fee    : Rs. 20.0
+Check-Out Status: SUCCESS
+===================================
+Available Spots : 1
+
+===================================
+           VEHICLE CHECK-OUT
+===================================
+Vehicle Number : UP16CR5678
+Vehicle Type   : CAR
+Ticket ID      : ca4a50a9-2f1f-4265-9431-8179c302edf5
+Entry Time     : 2026-10-23T18:43:13.466618069
+Exit Time      : 2026-10-23T18:43:13.476337426
+Parking Fee    : Rs. 50.0
+Check-Out Status: SUCCESS
+===================================
+Available Spots : 2
+
+===================================
+           VEHICLE CHECK-OUT
+===================================
+Vehicle Number : UP16BS9999
+Vehicle Type   : BUS
+Ticket ID      : 52c8dfa0-9c40-4ec0-945e-a7773b708725
+Entry Time     : 2026-10-23T18:43:13.467124843
+Exit Time      : 2026-10-23T18:43:13.477297372
+Parking Fee    : Rs. 100.0
+Check-Out Status: SUCCESS
+===================================
+Available Spots : 3
+
+===== REUSE FREED SPOT TEST =====
+
+===================================
+           VEHICLE CHECK-IN
+===================================
+Vehicle Number : UP16NEW123
+Vehicle Type   : BIKE
+Check-In Status: SUCCESS
+Ticket ID      : 8b69dff3-9920-4bd9-8781-b49384062e8e
+Spot ID        : 1
+Entry Time     : 2026-10-23T18:43:13.477961350
+===================================
+Available Spots : 2
+
+===================================
+          TESTS COMPLETED
+===================================
+vikash@vikash:~/Downloads/Airtribe/SmartParkingLotSystem$

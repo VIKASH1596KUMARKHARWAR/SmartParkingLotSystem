@@ -1,0 +1,32 @@
+vikash@vikash:~/Downloads/Airtribe/SmartParkingLotSystem$ javac -d out $(find src -name "*.java") && java -cp out AdvancedConcurrencyTest
+
+===================================
+   ADVANCED CONCURRENCY TESTS
+===================================
+
+TEST 1: Concurrent check-in across managers
+PASS: Six cars: four parked, two rejected, unique spots
+
+TEST 2: Simultaneous checkout of one ticket
+PASS: Exactly one checkout succeeds
+
+TEST 3: Repeated checkout
+PASS: Repeated checkout rejected
+
+TEST 4: Concurrent check-in and checkout
+PASS: Concurrent check-in and checkout both complete
+
+TEST 5: Ticket ID uniqueness
+PASS: All generated ticket IDs are unique
+
+TEST 6: Spot compatibility
+PASS: No car was assigned a small spot
+
+TEST 7: Checkout cleanup
+PASS: All five spots are available after cleanup
+
+Available spots: 5
+===================================
+ADVANCED TESTS COMPLETED
+===================================
+vikash@vikash:~/Downloads/Airtribe/SmartParkingLotSystem$

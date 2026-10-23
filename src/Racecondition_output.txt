@@ -1,0 +1,95 @@
+vikash@vikash:~/Downloads/Airtribe/SmartParkingLotSystem$ javac -d out $(find src -name "*.java") && java -cp out RaceConditionTest
+
+===================================
+   PARKING RACE CONDITION TEST
+===================================
+Cars competing : 6
+Physical spots : 5
+Compatible car spots : 4
+
+===== STARTING CONCURRENT CHECK-IN =====
+
+-----------------------------------
+       CONCURRENT CHECK-IN
+-----------------------------------
+Vehicle Number : CAR-1
+Vehicle Type   : CAR
+Status         : PARKED SUCCESSFULLY
+Ticket ID      : bc088e59-03bd-4513-b099-44a4c4a424ba
+Spot ID        : 2
+Entry Time     : 2026-10-23T18:43:32.600250913
+-----------------------------------
+
+-----------------------------------
+       CONCURRENT CHECK-IN
+-----------------------------------
+Vehicle Number : CAR-4
+Vehicle Type   : CAR
+Status         : REJECTED
+Reason         : No compatible spot available
+Ticket ID      : Not generated
+-----------------------------------
+
+-----------------------------------
+       CONCURRENT CHECK-IN
+-----------------------------------
+Vehicle Number : CAR-2
+Vehicle Type   : CAR
+Status         : REJECTED
+Reason         : No compatible spot available
+Ticket ID      : Not generated
+-----------------------------------
+
+-----------------------------------
+       CONCURRENT CHECK-IN
+-----------------------------------
+Vehicle Number : CAR-6
+Vehicle Type   : CAR
+Status         : PARKED SUCCESSFULLY
+Ticket ID      : 9a5efd66-711f-4afa-a36f-8225203f3044
+Spot ID        : 5
+Entry Time     : 2026-10-23T18:43:32.600976605
+-----------------------------------
+
+-----------------------------------
+       CONCURRENT CHECK-IN
+-----------------------------------
+Vehicle Number : CAR-3
+Vehicle Type   : CAR
+Status         : PARKED SUCCESSFULLY
+Ticket ID      : a7be5b40-c143-4f4d-af47-d24b7aaaa080
+Spot ID        : 4
+Entry Time     : 2026-10-23T18:43:32.600762434
+-----------------------------------
+
+-----------------------------------
+       CONCURRENT CHECK-IN
+-----------------------------------
+Vehicle Number : CAR-5
+Vehicle Type   : CAR
+Status         : PARKED SUCCESSFULLY
+Ticket ID      : a2961124-5573-43aa-93ce-9c49c432ccef
+Spot ID        : 3
+Entry Time     : 2026-10-23T18:43:32.600544296
+-----------------------------------
+
+===================================
+       RACE CONDITION SUMMARY
+===================================
+Total cars attempted : 6
+Cars parked          : 4
+Cars rejected        : 2
+Unique spots assigned: 4
+
+===== FINAL PARKING STATUS =====
+Available Spots : 1
+
+===================================
+          TEST RESULT
+===================================
+PASS: No duplicate spot allocation.
+PASS: Only compatible spots were assigned.
+PASS: Excess cars were rejected.
+PASS: All threads completed.
+OVERALL RESULT: PASSED
+vikash@vikash:~/Downloads/Airtribe/SmartParkingLotSystem$
