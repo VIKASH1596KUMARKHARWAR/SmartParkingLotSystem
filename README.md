@@ -22,6 +22,9 @@ The system should:
 - Handle concurrent vehicle check-ins and check-outs
 
 ---
+## Overall Test Report
+
+![Smart Parking Lot System - Overall Test Report](src/overall-test-report.png)
 
 # Functional Requirements
 
@@ -487,9 +490,6 @@ src
 ```
 ---
 
-## Overall Test Report
-
-![Smart Parking Lot System - Overall Test Report](src/overall-test-report.png)
 
 # Future Enhancements
 
